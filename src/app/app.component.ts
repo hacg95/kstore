@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'k-store';
+  imgParent = '';
+  onLoaded(img: string) {
+    console.log('Child image was loaded', img)
+  }
 }

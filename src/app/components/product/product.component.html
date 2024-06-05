@@ -1,0 +1,10 @@
+<div class="product">
+    <img *ngIf="product.images.length > 0" [src]="product.images[0]" [alt]="product.title" class="product-img">
+    <h2 class="price">{{ product.price | currency: 'USD' }}</h2>
+    <p class="title">{{ product.title }}</p>
+    <p class="description">{{ product.description }}</p>
+    <div class="buttons">
+        <button class="button" (click)="onShowDetail()">Show Detail</button>
+        <button class="button" (click)="onAddToCart()">Add Cart</button>
+    </div>
+</div>
